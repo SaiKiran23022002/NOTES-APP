@@ -1,0 +1,35 @@
+<body>
+  <button type="submit" (click)="logOut()" class="btn btn-primary" id="first">
+    Logout
+  </button>
+  <br />
+  <div class="container">
+    <h1>Welcome to Notes Manager App</h1>
+    <div class="button-container">
+      <button routerLink="/addnote" class="button-secondary">
+        <img
+          src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698554-icon-42-note-add-512.png"
+          alt="Add Notes"
+          width="140px"
+          height="140px"
+        />
+        <p class="button-title">Add New Note</p>
+        <p class="button-description">
+          Create a new note and save it in your collection.
+        </p>
+      </button>
+      <button routerLink="/view-note" class="button-primary">
+        <img
+          src="https://cdn2.iconfinder.com/data/icons/notepads-solid/100/note_notebook_notepad-02-512.png"
+          widht="140px"
+          height="140px"
+          alt="View Notes"
+        />
+        <p class="button-title">View Notes</p>
+        <p class="button-description">
+          View all your saved notes in one place.
+        </p>
+      </button>
+    </div>
+  </div>
+</body>

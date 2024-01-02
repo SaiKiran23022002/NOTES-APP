@@ -1,0 +1,51 @@
+<body>
+  <button
+    type="submit"
+    routerLink="/notesmanager"
+    class="btn btn-primary"
+    id="first"
+  >
+    Back
+  </button>
+  <br /><br />
+  <div class="container">
+    <table>
+      <tbody>
+        <tr>
+          <td
+            colspan="3"
+            style="
+              background-color: rgb(53, 9, 230);
+              color: azure;
+              font-weight: bolder;
+            "
+          >
+            YOUR NOTES COLLECTION
+          </td>
+        </tr>
+        <tr>
+          <th>TITLE</th>
+          <th>CONTENT</th>
+          <th>ACTIONS</th>
+        </tr>
+
+        <tr *ngFor="let item of noteCollection.slice(0, maxNotesToShow)">
+          <td>
+            <p>{{ item.title }}</p>
+          </td>
+          <td class="content-column">
+            <p>{{ item.content }}</p>
+          </td>
+          <td>
+            <button class="btn btn-info" (click)="deleteNote(item.id)">
+              Delete
+            </button>
+          </td>
+        </tr>
+        <div *ngIf="noteCollection.length === 0">
+          No notes available. Go back and add notes
+        </div>
+      </tbody>
+    </table>
+  </div>
+</body>
