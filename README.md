@@ -1,6 +1,6 @@
 # NotesApp FrontEnd
 
-- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1. The title of the project is NOTES-APP. This is a notes application where a user can register and login and store his/her notes and also view them if needed. 
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1. The title of the project is NOTES-APP. This is a notes application where a user can register and login and store his/her notes and also view and delete them if needed. 
 
 ## Components 
 
